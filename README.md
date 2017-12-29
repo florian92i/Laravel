@@ -20,3 +20,8 @@ php artisan
 Pour crée un controler:
 php artisan make:controller NomControler
 
+
+Pour voir tout les chemin du route:
+php artisan route:list
+![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0154.JPG)
+
