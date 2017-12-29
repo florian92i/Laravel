@@ -25,3 +25,7 @@ Pour voir tout les chemin du route:
 php artisan route:list
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0154.JPG)
 
+Pour crée une page 404 au lieu de celle par default:
+resources/views/errors/404.blade.php  
+Laravel s'occupe du reste
+
