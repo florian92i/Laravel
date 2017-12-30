@@ -29,3 +29,7 @@ Pour crée une page 404 au lieu de celle par default:
 resources/views/errors/404.blade.php  
 Laravel s'occupe du reste
 
+
+Crée une authentification:
+php artisan make:auth
+![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0182.JPG)
