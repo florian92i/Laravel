@@ -72,10 +72,15 @@ en définissant une  redirectTopropriété sur le
 
 * RegisterControlleret,
 
-* ResetPasswordController,
+* ResetPasswordController
 
-`protected function redirectTo()
-{
-    return '/path';
-}`
+Voici le code a mettre :
+
+    int main()
+    {
+        printf("Hello world!\n");
+        return 0;
+    }
+
 ******
+  
