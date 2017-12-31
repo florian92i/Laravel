@@ -2,7 +2,7 @@
 ******
 
 ## Une barre de débogage
-composer require barryvdh/laravel-debugbar:~2.4 
+`composer require barryvdh/laravel-debugbar:~2.4 `
 ![alt text](https://cloud.githubusercontent.com/assets/973269/4270452/740c8c8c-3ccb-11e4-8d9a-5a9e64f19351.png)
 
 A rajouter pour activer la barre de debug dans config->app.php:
@@ -21,7 +21,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installa
 
 ## Pour voir tout les commandes possibles via l'outil artisan
 
-##### php artisan
+`php artisan`
 
 ******
 
@@ -40,7 +40,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installa
 ## Pour crée une page 404 au lieu de celle par default:
 
 Il faut crée la page 404 dans ce dossier
-resources/views/errors/404.blade.php  
+`resources/views/errors/404.blade.php  `
 Laravel s'occupe du reste
 
 ******
@@ -72,8 +72,8 @@ en définissant une  redirectTopropriété sur le
 
 * ResetPasswordController,
 
-protected function redirectTo()
+`protected function redirectTo()
 {
     return '/path';
-}
+}`
 ******
