@@ -65,12 +65,9 @@ https://laravel.com/docs/5.0/authentication#protecting-routes
 Vous pouvez personnaliser l'emplacement de redirection post-authentification 
 en définissant une  redirectTopropriété sur le 
 
-LoginController, 
-
-RegisterControlleret, 
-
-ResetPasswordController
-
+LoginController. 
+RegisterControlleret. 
+ResetPasswordController.
 protected function redirectTo()
 {
     return '/path';
