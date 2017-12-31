@@ -40,3 +40,16 @@ Route::get('profile', ['middleware' => 'auth', 'uses' => 'ProfileController@show
 Laravel fournit le auth middleware par défaut pour restreindre
 https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/l-authentification-1
 https://laravel.com/docs/5.0/authentication#protecting-routes
+//Pour toute questions sur l'aut regarder la doc elle explique tout
+
+Pour modifier les route une fois l'utilisateur log:
+Vous pouvez personnaliser l'emplacement de redirection post-authentification 
+en définissant une  redirectTopropriété sur le 
+LoginController, 
+RegisterControlleret, 
+ResetPasswordController
+
+protected function redirectTo()
+{
+    return '/path';
+}
