@@ -40,6 +40,7 @@ Crée une authentification:
 php artisan make:auth
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0182.JPG)
 
+
 Restreindre certaine page si la personne est log ou non:
 
 Route::get('profile', ['middleware' => 'auth', 'uses' => 'ProfileController@show']);
