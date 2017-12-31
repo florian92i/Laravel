@@ -14,7 +14,7 @@ Pour crée des formulaires simplement:
 https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installation-et-organisation-1#/id/r-3616419
 
 
-##Pour voir tout les commandes possibles via l'outil artisan:
+##Pour voir tout les commandes possibles via l'outil artisan##
 
 php artisan
 
