@@ -7,8 +7,8 @@
 
 A rajouter pour activer la barre de debug dans config->app.php en dessous de   
        
-> Application Service Providers...
-        
+> Application Service Providers... 
+:
 
 `Barryvdh\Debugbar\ServiceProvider::class,` 
 
