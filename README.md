@@ -15,12 +15,10 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installa
 
 
 Pour voir tout les commandes possibles via l'outil artisan:
-
 php artisan
 
 
 Pour crée un controler:
-
 php artisan make:controller NomControler
 
 
