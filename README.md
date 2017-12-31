@@ -54,8 +54,10 @@ Laravel s'occupe du reste
 
 ## Restreindre certaine page si la personne est log ou non:
 
-Route::get('profile', ['middleware' => 'auth', 'uses' => 'ProfileController@show']);
+`Route::get('profile', ['middleware' => 'auth', 'uses' => 'ProfileController@show']);`
+
 Laravel fournit le auth middleware par défaut pour restreindre
+
 https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/l-authentification-1
 https://laravel.com/docs/5.0/authentication#protecting-routes
 //Pour toute questions sur l'aut regarder la doc elle explique tout
