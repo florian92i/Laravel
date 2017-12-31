@@ -27,13 +27,13 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installa
 
 ## Pour crée un controler:
 
-'php artisan make:controller NomControler'
+`php artisan make:controller NomControler`
 ******
 
 
 ## Pour voir tout les chemin du route:
 
-php artisan route:list
+`php artisan route:list`
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0154.JPG)
 ******
 
@@ -47,7 +47,7 @@ Laravel s'occupe du reste
 
 ## Crée une authentification:
 
-php artisan make:auth
+`php artisan make:auth`
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0182.JPG)
 
 ******
