@@ -39,6 +39,7 @@ php artisan route:list
 
 ## Pour crée une page 404 au lieu de celle par default:
 
+Il faut crée la page 404 dans ce dossier
 resources/views/errors/404.blade.php  
 Laravel s'occupe du reste
 
