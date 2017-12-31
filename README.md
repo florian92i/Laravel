@@ -6,9 +6,9 @@
 ![alt text](https://cloud.githubusercontent.com/assets/973269/4270452/740c8c8c-3ccb-11e4-8d9a-5a9e64f19351.png)
 
 A rajouter pour activer la barre de debug dans config->app.php en dessous de   
-         `/*
-         * Application Service Providers...
-         */:`
+       
+> Application Service Providers...
+        
 
 `Barryvdh\Debugbar\ServiceProvider::class,` 
 
