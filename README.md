@@ -33,3 +33,10 @@ Laravel s'occupe du reste
 Crée une authentification:
 php artisan make:auth
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0182.JPG)
+
+Restreindre certaine page si la personne est log ou non:
+
+Route::get('profile', ['middleware' => 'auth', 'uses' => 'ProfileController@show']);
+Laravel fournit le auth middleware par défaut pour restreindre
+https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/l-authentification-1
+https://laravel.com/docs/5.0/authentication#protecting-routes
