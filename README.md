@@ -78,7 +78,7 @@ Voici le code a mettre :
 
     protected function redirectTo()
     {
-    return '/path';
+        return '/path';
     }
 
 ******
