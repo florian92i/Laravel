@@ -6,8 +6,9 @@
 ![alt text](https://cloud.githubusercontent.com/assets/973269/4270452/740c8c8c-3ccb-11e4-8d9a-5a9e64f19351.png)
 
 A rajouter pour activer la barre de debug dans config->app.php:
-Barryvdh\Debugbar\ServiceProvider::class,
-'Debugbar' => Barryvdh\Debugbar\Facade::class,
+
+`Barryvdh\Debugbar\ServiceProvider::class,
+'Debugbar' => Barryvdh\Debugbar\Facade::class,`
 
 
 
@@ -56,7 +57,7 @@ Laravel s'occupe du reste
 
 `Route::get('profile', ['middleware' => 'auth', 'uses' => 'ProfileController@show']);`
 
-Laravel fournit le auth middleware par défaut pour restreindre
+Laravel fournit le `auth` middleware par défaut pour restreindre
 
 https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/l-authentification-1
 https://laravel.com/docs/5.0/authentication#protecting-routes
