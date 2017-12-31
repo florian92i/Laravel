@@ -1,4 +1,6 @@
 # Laravel
+******
+
 ##composer require barryvdh/laravel-debugbar:~2.4 //  une barre de débogage
 ![alt text](https://cloud.githubusercontent.com/assets/973269/4270452/740c8c8c-3ccb-11e4-8d9a-5a9e64f19351.png)
 
@@ -18,6 +20,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installa
 
 php artisan
 
+******
 
 ##Pour crée un controler:
 
