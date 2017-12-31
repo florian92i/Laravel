@@ -27,7 +27,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installa
 
 ## Pour crée un controler:
 
-php artisan make:controller NomControler
+'php artisan make:controller NomControler'
 ******
 
 
