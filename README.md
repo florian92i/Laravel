@@ -21,7 +21,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installa
 
 ## Pour voir tout les commandes possibles via l'outil artisan
 
-*   Red php artisan
+ php artisan
 
 ******
 
@@ -65,11 +65,11 @@ https://laravel.com/docs/5.0/authentication#protecting-routes
 Vous pouvez personnaliser l'emplacement de redirection post-authentification 
 en définissant une  redirectTopropriété sur le 
 
-LoginController,
+* LoginController,
 
-RegisterControlleret,
+* RegisterControlleret,
 
-ResetPasswordController,
+* ResetPasswordController,
 
 protected function redirectTo()
 {
