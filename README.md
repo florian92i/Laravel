@@ -87,3 +87,33 @@ Voici le code a mettre :
     }
 
 ******
+# Base de donner
+### Installer la migration:   
+`php artisan migrate:install`
+> Cela va nous permettre de suivre toute nos changement de migration par exemple si on a crée une base de donner ect..
+
+*******
+### Créer la migration:     
+`php artisan make:migration create_emails_table`
+
+
+*******
+### Utiliser la migration:    
+`php artisan migrate`
+
+
+*******
+### Revenir en arrière avec unrollback 
+Annule la dernière migration effectuée:       
+`php artisan migrate:rollback`
+*******
+
+
+
+
+
+https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migrations-et-modeles-1#/id/r-3617345 :
+`php artisan make:model Email`
+
+### Créer une requête de formulaire:            
+`php artisan make:request EmailRequest`
