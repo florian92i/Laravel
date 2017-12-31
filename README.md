@@ -76,10 +76,9 @@ en définissant une  redirectTopropriété sur le
 
 Voici le code a mettre :
 
-    int main()
+    protected function redirectTo()
     {
-        printf("Hello world!\n");
-        return 0;
+    return '/path';
     }
 
 ******
