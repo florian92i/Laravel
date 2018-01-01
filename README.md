@@ -149,7 +149,7 @@ Voici le code a mettre :
 ### Créer la migration:     
 `php artisan make:migration create_emails_table`
 
-
+> remplir la migration https://laravel.com/docs/5.5/migrations#creating-columns
 *******
 ### Utiliser la migration:    
 `php artisan migrate`
