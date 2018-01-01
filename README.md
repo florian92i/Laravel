@@ -26,7 +26,7 @@ https://laravelcollective.com/docs/5.2/html
 
 `composer require "laravelcollective/html":"^5.2.0"`
 
-> Ensuite, ajoutez votre nouveau fournisseur au providerstableau de :config/app.php
+> Ensuite, ajoutez votre nouveau fournisseur au providers tableau de :config/app.php
 
       'providers' => [
          // ...
@@ -34,7 +34,7 @@ https://laravelcollective.com/docs/5.2/html
          // ...
        ],
        
-> Enfin, ajoutez deux alias de classe au aliasestableau de :config/app.php
+> Enfin, ajoutez deux alias de classe au aliases tableau de :config/app.php
 
        'aliases' => [
          // ...
