@@ -3,7 +3,7 @@
 ## Sommaire
 
 - [Installation](#Installation)
-       -azer
+   -azer
 - [Les dispositifs techniques pour accéder aux contenus](#les-dispositifs-techniques-pour-accéder-aux-contenus)
 - [Le RGAA et les documents en téléchargement](#le-rgaa-et-les-documents-en-téléchargement)
 - [À qui s’adressent ces guides ?](#À-qui-sadressent-ces-guides)
