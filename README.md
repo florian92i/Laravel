@@ -108,6 +108,9 @@ Voici le code a mettre :
 
 ******
 # Base de donner
+
+## Renseigner le nom de sa base de donner (.env)
+> faut indiquer où se trouve votre base, son nom, le nom de l'utilisateur, le mot de passe dans le fichier de configuration.env
 ### Installer la migration:   
 `php artisan migrate:install`
 > Cela va nous permettre de suivre toute nos changement de migration par exemple si on a crée une base de donner ect..
