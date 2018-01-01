@@ -6,6 +6,13 @@
 * [Installation](#installation)
   * [Une barre de débogage](#une-barre-de-debogage)
   * [Pour crée des formulaires simplement](#pour-cr%C3%A9e-des-formulaires-simplement)
+* [Cmd artisan](#cmd-artisan)
+  * [Pour voir tout les commandes possibles via l'outil artisan](#pour-voir-tout-les-commandes-possibles-via-loutil-artisan)
+  * [Pour crée un controler](#pour-cr%C3%A9e-un-controler)
+  * [Pour voir tout les chemin du route](#pour-voir-tout-les-chemin-du-route)
+
+  * [Pour crée une page 404 au lieu de celle par default](#pour-cr%C3%A9e-une-page-404-au-lieu-de-celle-par-default)
+  * [Crée une authentification](#cr%C3%A9e-une-authentification)
 
 ******
 
@@ -72,6 +79,8 @@ https://laravelcollective.com/docs/5.2/html
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0154.JPG)
 ******
 
+# Utile
+
 ## Pour crée une page 404 au lieu de celle par default:
 
 Il faut crée la page 404 dans ce dossier
@@ -79,6 +88,8 @@ Il faut crée la page 404 dans ce dossier
 Laravel s'occupe du reste
 
 ******
+
+# Authentification
 
 ## Crée une authentification:
 
