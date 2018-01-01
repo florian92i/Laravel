@@ -1,5 +1,7 @@
 # Laravel
 ******
+## Installation
+`composer create-project --prefer-dist laravel/laravel nom_projet`
 
 ## Une barre de débogage
 `composer require barryvdh/laravel-debugbar:~2.4 `
@@ -19,9 +21,27 @@ A rajouter pour activer la barre de debug dans config->app.php en dessous de
 ******
 
 ## Pour crée des formulaires simplement:
+> installer ce paquet via Composer
+https://laravelcollective.com/docs/5.2/html
 
-https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/installation-et-organisation-1#/id/r-3616419
+`composer require "laravelcollective/html":"^5.2.0"`
 
+> Ensuite, ajoutez votre nouveau fournisseur au providerstableau de :config/app.php
+
+      'providers' => [
+         // ...
+              Collective\Html\HtmlServiceProvider::class,
+         // ...
+       ],
+       
+> Enfin, ajoutez deux alias de classe au aliasestableau de :config/app.php
+
+       'aliases' => [
+         // ...
+              'Form' => Collective\Html\FormFacade::class,
+              'Html' => Collective\Html\HtmlFacade::class,
+        // ...
+        ],
 ******
 
 ## Pour voir tout les commandes possibles via l'outil artisan
