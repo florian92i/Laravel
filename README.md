@@ -10,10 +10,19 @@
   * [Pour voir tout les commandes possibles via l'outil artisan](#pour-voir-tout-les-commandes-possibles-via-loutil-artisan)
   * [Pour crée un controler](#pour-cr%C3%A9e-un-controler)
   * [Pour voir tout les chemin du route](#pour-voir-tout-les-chemin-du-route)
-
+* [Utile](#utile)
   * [Pour crée une page 404 au lieu de celle par default](#pour-cr%C3%A9e-une-page-404-au-lieu-de-celle-par-default)
-  * [Crée une authentification](#cr%C3%A9e-une-authentification)
-
+* [Authentification](#authentification)
+  * [Restreindre certaine page si la personne est log ou non](#restreindre-certaine-page-si-la-personne-est-log-ou-non)
+  * [Pour modifier les route une fois l'utilisateur log](#pour-modifier-les-route-une-fois-lutilisateur-log)
+* [Base de donner](#base-de-donner)
+  * [Renseigner le nom de sa base de donner (.env)](#renseigner-le-nom-de-sa-base-de-donner-env)
+  * [Installer la migration](#installer-la-migration)
+  * [Créer la migration](#cr%C3%A9er-la-migration)
+  * [Utiliser la migration](#utiliser-la-migration)
+  * [Revenir en arrière avec unrollback](#revenir-en-arri%C3%A8re-avec-unrollback)
+  * [Créer une requête de formulaire](#cr%C3%A9er-une-requ%C3%AAte-de-formulaire)
+ 
 ******
 
 # Installation
