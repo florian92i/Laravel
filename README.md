@@ -4,7 +4,7 @@
 
 
 * [Installation](#installation)
-  * [Une barre de débogage](#Une_barre_de_débogage)
+  * [Une barre de débogage](#Une_barre_de_debogage)
   * [Pour crée des formulaires simplement](#Pour_crée_des_formulaires_simplement:)
 - [Les dispositifs techniques pour accéder aux contenus](#les-dispositifs-techniques-pour-accéder-aux-contenus)
 - [Le RGAA et les documents en téléchargement](#le-rgaa-et-les-documents-en-téléchargement)
@@ -16,7 +16,7 @@
 # Installation
 `composer create-project --prefer-dist laravel/laravel nom_projet`
 ******
-### Une barre de débogage
+### Une barre de debogage
 `composer require barryvdh/laravel-debugbar:~2.4 `
 ![alt text](https://cloud.githubusercontent.com/assets/973269/4270452/740c8c8c-3ccb-11e4-8d9a-5a9e64f19351.png)
 
