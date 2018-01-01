@@ -3,7 +3,7 @@
 ## Sommaire
 
 
-* [Installation](#Installation)
+* [Installation](#installation)
   * Nested bullet
 - [Les dispositifs techniques pour accéder aux contenus](#les-dispositifs-techniques-pour-accéder-aux-contenus)
 - [Le RGAA et les documents en téléchargement](#le-rgaa-et-les-documents-en-téléchargement)
