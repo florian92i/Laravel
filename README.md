@@ -4,7 +4,8 @@
 
 
 * [Installation](#installation)
-  * Nested bullet
+  * [Une barre de débogage](#une_barre_de_débogage)
+  * [Pour crée des formulaires simplement](#pour_crée_des_formulaires_simplement)
 - [Les dispositifs techniques pour accéder aux contenus](#les-dispositifs-techniques-pour-accéder-aux-contenus)
 - [Le RGAA et les documents en téléchargement](#le-rgaa-et-les-documents-en-téléchargement)
 - [À qui s’adressent ces guides ?](#À-qui-sadressent-ces-guides)
@@ -12,10 +13,10 @@
 - [Licence](#licence)
 ******
 
-## Installation
+# Installation
 `composer create-project --prefer-dist laravel/laravel nom_projet`
 ******
-## Une barre de débogage
+### Une barre de débogage
 `composer require barryvdh/laravel-debugbar:~2.4 `
 ![alt text](https://cloud.githubusercontent.com/assets/973269/4270452/740c8c8c-3ccb-11e4-8d9a-5a9e64f19351.png)
 
@@ -32,7 +33,7 @@ A rajouter pour activer la barre de debug dans config->app.php en dessous de
 
 ******
 
-## Pour crée des formulaires simplement:
+### Pour crée des formulaires simplement:
 > installer ce paquet via Composer
 https://laravelcollective.com/docs/5.2/html
 
@@ -55,6 +56,7 @@ https://laravelcollective.com/docs/5.2/html
         // ...
         ],
 ******
+# Cmd artisan
 
 ## Pour voir tout les commandes possibles via l'outil artisan
 
