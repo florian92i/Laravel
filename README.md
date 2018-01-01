@@ -4,8 +4,8 @@
 
 
 * [Installation](#installation)
-  * [Une barre de débogage](#Une barre de débogage)
-  * [Pour crée des formulaires simplement](#Pour_crée_des_formulaires_simplement)
+  * [Une barre de débogage](#Une_barre_de_débogage)
+  * [Pour crée des formulaires simplement](#Pour_crée_des_formulaires_simplement:)
 - [Les dispositifs techniques pour accéder aux contenus](#les-dispositifs-techniques-pour-accéder-aux-contenus)
 - [Le RGAA et les documents en téléchargement](#le-rgaa-et-les-documents-en-téléchargement)
 - [À qui s’adressent ces guides ?](#À-qui-sadressent-ces-guides)
