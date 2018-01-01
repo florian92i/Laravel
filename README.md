@@ -1,5 +1,15 @@
 # Laravel
 ******
+## Sommaire
+
+- [Installation](#Installation)
+- [Les dispositifs techniques pour accéder aux contenus](#les-dispositifs-techniques-pour-accéder-aux-contenus)
+- [Le RGAA et les documents en téléchargement](#le-rgaa-et-les-documents-en-téléchargement)
+- [À qui s’adressent ces guides ?](#À-qui-sadressent-ces-guides)
+- [Présentation des guides](#présentation-des-guides)
+- [Licence](#licence)
+******
+
 ## Installation
 `composer create-project --prefer-dist laravel/laravel nom_projet`
 ******
