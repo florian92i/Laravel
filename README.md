@@ -15,7 +15,7 @@
 * [Authentification](#authentification)
   * [Restreindre certaine page si la personne est log ou non](#restreindre-certaine-page-si-la-personne-est-log-ou-non)
   * [Pour modifier les route une fois l'utilisateur log](#pour-modifier-les-route-une-fois-lutilisateur-log)
-  * [Changer la redirection apres avoir appuyer sur le bouton deconnexion](#Changer-la-redirection-apres-avoir-appuyer-sur-le-bouton-deconnexion)
+  * [Changer la redirection apres avoir appuyer sur le bouton deconnexion](#changer-la-redirection-apres-avoir-appuyer-sur-le-bouton-deconnexion)
 
 * [Base de donner](#base-de-donner)
   * [Renseigner le nom de sa base de donner (.env)](#renseigner-le-nom-de-sa-base-de-donner-env)
