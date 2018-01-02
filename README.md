@@ -150,6 +150,8 @@ Voici le code a mettre :
 
         return redirect('/');           // Changer le '/' par l'url que vous voulez 
     }
+    
+> Pour voir les routes taper `Router` et ensuite recherche la fonction `auth` 
 ******
 
 # Base de donner
