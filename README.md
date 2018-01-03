@@ -6,7 +6,7 @@
 * [Installation](#installation)
   * [Une barre de débogage](#une-barre-de-debogage)
   * [Pour crée des formulaires simplement](#pour-cr%C3%A9e-des-formulaires-simplement)
-* [Architecture fichier](#architecture-fichier)
+* [Architecture fichier les dossiers les plus importants](#architecture-fichier)
   * [Views (resources\views)](#views-resourcesviews)
   * [Routes(routes\web.php)](#routesrouteswebphp)
   * [Controllers (app\Http\Controllers)](#controllers-apphttpcontrollers)
