@@ -230,7 +230,7 @@ Exemple:
 			]);
 		}
 	}
-}
+
 
 > Url doc: http://carbon.nesbot.com/docs/
 *******
