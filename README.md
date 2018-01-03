@@ -24,7 +24,10 @@
   * [Utiliser la migration](#utiliser-la-migration)
   * [Revenir en arrière avec unrollback](#revenir-en-arri%C3%A8re-avec-unrollback)
   * [Créer une requête de formulaire](#cr%C3%A9er-une-requ%C3%AAte-de-formulaire)
- 
+
+* [Les Dates](#les-dates)
+  * [Crée ces dates avec Carbon](#cr%C3%A9e-ces-dates-avec-carbon)
+
 ******
 
 # Installation
@@ -202,7 +205,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
 ### Crée ces dates avec Carbon
 > La classe Carbon, issue d'un package chargé par Laravel, permet la manipulation facile des dates. N'hésitez pas à l'utiliser dès que vous avez des dates à gérer.
 
-`use Carbon\Carbon;`
+> Vous devez ajouter cet ligne dans le fichier dans lequel vous utiliserez des dates `use Carbon\Carbon;`
 
 Exemple:
 
