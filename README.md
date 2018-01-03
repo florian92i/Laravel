@@ -24,6 +24,9 @@
   * [Utiliser la migration](#utiliser-la-migration)
   * [Revenir en arrière avec unrollback](#revenir-en-arri%C3%A8re-avec-unrollback)
   * [Créer une requête de formulaire](#cr%C3%A9er-une-requ%C3%AAte-de-formulaire)
+  
+* [Remplir nos tables avec des enregistrements pour faire nos essais](#remplir-nos-tables-avec-des-enregistrements-pour-faire-nos-essais)
+  * [Dans quel fichier ?](#dans-quel-fichier-)
 
 * [Les Dates](#les-dates)
   * [Crée ces dates avec Carbon](#cr%C3%A9e-ces-dates-avec-carbon)
@@ -181,6 +184,24 @@ Voici le code a mettre :
 ### Utiliser la migration:    
 `php artisan migrate`
 
+
+*******
+### Revenir en arrière avec unrollback 
+Annule la dernière migration effectuée:       
+`php artisan migrate:rollback`
+*******
+
+
+
+
+
+https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migrations-et-modeles-1#/id/r-3617345 :
+`php artisan make:model Email`
+
+### Créer une requête de formulaire:            
+`php artisan make:request EmailRequest`
+*******
+
 # Remplir nos tables avec des enregistrements pour faire nos essais
 
 ### Dans quel fichier ?
@@ -194,11 +215,11 @@ Voici le code a mettre :
   	   $this->call(EmailTableSeeder::class);   // Relier au fichier EmailTableSeeder.php
 	}
 	
-> Commande pour crée les deux fichier en question
+> Commande pour crée les deux fichier en question:
 
 `php artisan make:seeder UserTableSeeder`
 
-> Exemple de ce qu'il faudrait metre pour la table users
+> Exemple de ce qu'il faudrait metre pour la table users:
 
     public function run()
 	{
@@ -218,22 +239,6 @@ Voici le code a mettre :
 > Il suffit maintenant d'utiliser la commande d'Artisan remplir nos tables
 
 `php artisan db:seed`
-*******
-### Revenir en arrière avec unrollback 
-Annule la dernière migration effectuée:       
-`php artisan migrate:rollback`
-*******
-
-
-
-
-
-https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migrations-et-modeles-1#/id/r-3617345 :
-`php artisan make:model Email`
-
-### Créer une requête de formulaire:            
-`php artisan make:request EmailRequest`
-*******
 
 # Les dates
 *******
