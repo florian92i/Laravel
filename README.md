@@ -70,6 +70,13 @@ https://laravelcollective.com/docs/5.2/html
         // ...
         ],
 ******
+
+# Architecture fichier
+
+##Controler
+
+##Repository 
+
 # Cmd artisan
 
 ## Pour voir tout les commandes possibles via l'outil artisan
@@ -187,3 +194,43 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
 
 ### Créer une requête de formulaire:            
 `php artisan make:request EmailRequest`
+*******
+
+# Les dates
+*******
+
+### Crée ces dates avec Carbon
+> La classe Carbon, issue d'un package chargé par Laravel, permet la manipulation facile des dates. N'hésitez pas à l'utiliser dès que vous avez des dates à gérer.
+
+`use Carbon\Carbon;`
+
+Exemple:
+<?php
+
+    use Illuminate\Database\Seeder;
+    use Carbon\Carbon;
+
+    class PostTableSeeder extends Seeder {
+
+    private function randDate()
+	{
+		return Carbon::createFromDate(null, rand(1, 12), rand(1, 28));
+	}
+
+	public function run()
+	{
+		DB::table('posts')->delete();
+
+		for($i = 0; $i < 100; ++$i)
+		{
+			$date = $this->randDate();
+		
+				'created_at' => $date,
+				'updated_at' => $date
+			]);
+		}
+	}
+}
+
+> Url doc: http://carbon.nesbot.com/docs/
+*******
