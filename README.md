@@ -195,6 +195,7 @@ Voici le code a mettre :
 	}
 	
 > Commande pour crée les deux fichier en question
+
 `php artisan make:seeder UserTableSeeder`
 
 > Exemple de ce qu'il faudrait metre pour la table users
@@ -213,7 +214,9 @@ Voici le code a mettre :
 			]);
 		}
 	}
+	
 > Il suffit maintenant d'utiliser la commande d'Artisan remplir nos tables
+
 `php artisan db:seed`
 *******
 ### Revenir en arrière avec unrollback 
