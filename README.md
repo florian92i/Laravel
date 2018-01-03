@@ -6,6 +6,7 @@
 * [Installation](#installation)
   * [Une barre de débogage](#une-barre-de-debogage)
   * [Pour crée des formulaires simplement](#pour-cr%C3%A9e-des-formulaires-simplement)
+  
 * [Architecture fichier les dossiers les plus importants](#architecture-fichier)
   * [Views (resources\views)](#views-resourcesviews)
   * [Routes(routes\web.php)](#routesrouteswebphp)
@@ -17,9 +18,12 @@
   * [Pour voir tout les commandes possibles via l'outil artisan](#pour-voir-tout-les-commandes-possibles-via-loutil-artisan)
   * [Pour crée un controler](#pour-cr%C3%A9e-un-controler)
   * [Pour voir tout les chemin du route](#pour-voir-tout-les-chemin-du-route)
+  
 * [Utile](#utile)
   * [Pour crée une page 404 au lieu de celle par default](#pour-cr%C3%A9e-une-page-404-au-lieu-de-celle-par-default)
+  
 * [Authentification](#authentification)
+  * [Crée une authentification](#cr%C3%A9e-une-authentification)
   * [Restreindre certaine page si la personne est log ou non](#restreindre-certaine-page-si-la-personne-est-log-ou-non)
   * [Pour modifier les route une fois l'utilisateur log](#pour-modifier-les-route-une-fois-lutilisateur-log)
   * [Changer la redirection apres avoir appuyer sur le bouton deconnexion](#changer-la-redirection-apres-avoir-appuyer-sur-le-bouton-deconnexion)
