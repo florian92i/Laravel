@@ -164,7 +164,7 @@ Voici le code a mettre :
 > Pour voir les routes rechercher la class `Router` et ensuite recherche dans cet class la fonction `auth` 
 ******
 
-# Base de donner
+# Base de donner 
 
 ## Renseigner le nom de sa base de donner (.env)
 > faut indiquer où se trouve votre base, son nom, le nom de l'utilisateur, le mot de passe dans le fichier de configuration.env
@@ -176,12 +176,45 @@ Voici le code a mettre :
 ### Créer la migration:     
 `php artisan make:migration create_emails_table`
 
-> remplir la migration https://laravel.com/docs/5.5/migrations#creating-columns
+> Configurer la migration en creant les id ect...  https://laravel.com/docs/5.5/migrations#creating-columns
 *******
 ### Utiliser la migration:    
 `php artisan migrate`
 
+# Remplir nos tables avec des enregistrements pour faire nos essais
 
+### Dans quel fichier ?
+> DatabaseSeeder.php deja la par default
+![alt text](https://sdz-upload.s3.amazonaws.com/prod/upload/img88.JPG)
+> A l'interieur de se dossier remplir la function `run()` exemple:
+
+	public function run()
+	{
+   	   $this->call(UserTableSeeder::class);    // Relier au fichier UserTableSeeder.php
+  	   $this->call(EmailTableSeeder::class);   // Relier au fichier EmailTableSeeder.php
+	}
+	
+> Commande pour crée les deux fichier en question
+`php artisan make:seeder UserTableSeeder`
+
+> Exemple de ce qu'il faudrait metre pour la table users
+
+    public function run()
+	{
+		DB::table('users')->delete();
+
+		for($i = 0; $i < 10; ++$i)
+		{
+			DB::table('users')->insert([
+				'name' => 'Nom' . $i,
+				'email' => 'email' . $i . '@blop.fr',
+				'password' => bcrypt('password' . $i),
+				'admin' => rand(0, 1)
+			]);
+		}
+	}
+> Il suffit maintenant d'utiliser la commande d'Artisan remplir nos tables
+`php artisan db:seed`
 *******
 ### Revenir en arrière avec unrollback 
 Annule la dernière migration effectuée:       
