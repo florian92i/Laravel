@@ -205,7 +205,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
 `use Carbon\Carbon;`
 
 Exemple:
-<?php
+
 
     use Illuminate\Database\Seeder;
     use Carbon\Carbon;
