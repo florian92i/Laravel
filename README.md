@@ -145,8 +145,12 @@ Laravel s'occupe du reste
 ## Crée une authentification:
 
 `php artisan make:auth`
+
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0182.JPG)
 
+> Ensuite il faut inserer dans web.php:
+
+`Auth::routes();      //Auth::routes() génère automatiquement toutes les routes de l'authentification`
 ******
 
 ## Restreindre certaine page si la personne est log ou non:
