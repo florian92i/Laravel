@@ -206,22 +206,22 @@ Voici le code a mettre :
 
 ## Renseigner le nom de sa base de donner (.env)
 > faut indiquer où se trouve votre base, son nom, le nom de l'utilisateur, le mot de passe dans le fichier de configuration.env
-### Installer la migration:   
+## Installer la migration:   
 `php artisan migrate:install`
 > Cela va nous permettre de suivre toute nos changement de migration par exemple si on a crée une base de donner ect..
 
 *******
-### Créer la migration:     
+## Créer la migration:     
 `php artisan make:migration create_emails_table`
 
 > Configurer la migration en creant les id ect...  https://laravel.com/docs/5.5/migrations#creating-columns
 *******
-### Utiliser la migration:    
+## Utiliser la migration:    
 `php artisan migrate`
 
 
 *******
-### Revenir en arrière avec unrollback 
+## Revenir en arrière avec unrollback 
 Annule la dernière migration effectuée:       
 `php artisan migrate:rollback`
 *******
@@ -233,13 +233,13 @@ Annule la dernière migration effectuée:
 https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migrations-et-modeles-1#/id/r-3617345 :
 `php artisan make:model Email`
 
-### Créer une requête de formulaire:            
+## Créer une requête de formulaire:            
 `php artisan make:request EmailRequest`
 *******
 
 # Remplir nos tables avec des enregistrements pour faire nos essais
 
-### Dans quel fichier ?
+## Dans quel fichier ?
 > DatabaseSeeder.php deja la par default
 ![alt text](https://sdz-upload.s3.amazonaws.com/prod/upload/img88.JPG)
 > A l'interieur de se dossier remplir la function `run()` exemple:
@@ -278,7 +278,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
 # Les dates
 *******
 
-### Crée ces dates avec Carbon
+## Crée ces dates avec Carbon
 > La classe Carbon, issue d'un package chargé par Laravel, permet la manipulation facile des dates. N'hésitez pas à l'utiliser dès que vous avez des dates à gérer.
 
 > Vous devez ajouter cet ligne dans le fichier dans lequel vous utiliserez des dates `use Carbon\Carbon;`
