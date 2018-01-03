@@ -79,9 +79,17 @@ https://laravelcollective.com/docs/5.2/html
 
 # Architecture fichier
 
-##Controler
+## Controllers ( make:controller)
+> C'est le boss, c'est lui qui va appeller toute les fonctions placé dans le repository et lui passé les paramètre pour que le repository marche
+******
 
-##Repository 
+## Repository 
+> Pour le dire simplement, le modèle Repository est un type de conteneur où la logique d'accès aux données est stockée. Il cache les détails de la logique d'accès aux données de la logique métier. En d'autres termes, nous permettons à la logique métier d'accéder à l'objet de données sans connaître l'architecture d'accès aux données sous-jacente.C'est le feu.
+******
+
+## Request ( make:request)
+> C'est la ou on fera les controles de saisi, par exemple max 60 caractere ect...
+******
 
 # Cmd artisan
 
