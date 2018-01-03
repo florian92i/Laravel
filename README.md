@@ -6,6 +6,8 @@
 * [Installation](#installation)
   * [Une barre de débogage](#une-barre-de-debogage)
   * [Pour crée des formulaires simplement](#pour-cr%C3%A9e-des-formulaires-simplement)
+* [Installation](#installation)
+
 * [Cmd artisan](#cmd-artisan)
   * [Pour voir tout les commandes possibles via l'outil artisan](#pour-voir-tout-les-commandes-possibles-via-loutil-artisan)
   * [Pour crée un controler](#pour-cr%C3%A9e-un-controler)
@@ -79,15 +81,27 @@ https://laravelcollective.com/docs/5.2/html
 
 # Architecture fichier
 
-## Controllers ( make:controller)
+### Views (resources\views)
+
+> Contient tout les dossiers avec le code html
+******
+
+### Routes(routes\web.php)
+
+> Contient les trajets pour diriger vos Views
+******
+
+### Controllers (app\Http\Controllers)
+
 > C'est le boss, c'est lui qui va appeller toute les fonctions placé dans le repository et lui passé les paramètre pour que le repository marche
 ******
 
-## Repository 
+### Repository (app\Repositories)
+
 > Pour le dire simplement, le modèle Repository est un type de conteneur où la logique d'accès aux données est stockée. Il cache les détails de la logique d'accès aux données de la logique métier. En d'autres termes, nous permettons à la logique métier d'accéder à l'objet de données sans connaître l'architecture d'accès aux données sous-jacente.C'est le feu.
 ******
 
-## Request ( make:request)
+### Request (app\Http\Requests)
 > C'est la ou on fera les controles de saisi, par exemple max 60 caractere ect...
 ******
 
