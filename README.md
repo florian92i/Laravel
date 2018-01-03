@@ -6,7 +6,12 @@
 * [Installation](#installation)
   * [Une barre de débogage](#une-barre-de-debogage)
   * [Pour crée des formulaires simplement](#pour-cr%C3%A9e-des-formulaires-simplement)
-* [Installation](#installation)
+* [Architecture fichier](#architecture-fichier)
+  * [Views (resources\views)](#views-resourcesviews)
+  * [Routes(routes\web.php)](#routesrouteswebphp)
+  * [Controllers (app\Http\Controllers)](#controllers-apphttpcontrollers)
+  * [Repository (app\Repositories)](#repository-apprepositories)
+  * [Request (app\Http\Requests)](#request-apphttprequests)
 
 * [Cmd artisan](#cmd-artisan)
   * [Pour voir tout les commandes possibles via l'outil artisan](#pour-voir-tout-les-commandes-possibles-via-loutil-artisan)
