@@ -123,6 +123,7 @@ https://laravelcollective.com/docs/5.2/html
 
 `php artisan`
 
+![alt text](https://github.com/florian92i/Laravel/blob/master/artisan_cpt.PNG)
 ******
 
 ## Pour crée un controler:
