@@ -42,6 +42,9 @@
 * [Les Dates](#les-dates)
   * [Crée ces dates avec Carbon](#cr%C3%A9e-ces-dates-avec-carbon)
 
+* [Les Dates](#les-dates)
+  * [Crée ces dates avec Carbon](#cr%C3%A9e-ces-dates-avec-carbon)
+
 ******
 
 # Installation
@@ -331,3 +334,22 @@ Exemple:
 > Url doc: http://carbon.nesbot.com/docs/
 *******
 
+# Formulaire
+*******
+## Personnaliser les messages d'erreur(resources/lang/en/validation.php)
+> Acceder au fichier `validation.php` ensuite:
+
+	<?php
+	'custom' => [
+   	    'attribute-name' => [
+			'rule-name' => 'custom-message',
+  	 			],
+		    ],
+> C'est ici qu'on peut ajouter des messages spécifiques exemple :
+	
+	<?php
+	'custom' => [
+    		'tags' => [
+			'regex' => "tags, separated by commas (no spaces), should have a maximum of 50 characters.",
+			],
+		],
