@@ -28,7 +28,7 @@
   * [Pour modifier les route une fois l'utilisateur log](#pour-modifier-les-route-une-fois-lutilisateur-log)
   * [Changer la redirection apres avoir appuyer sur le bouton deconnexion](#changer-la-redirection-apres-avoir-appuyer-sur-le-bouton-deconnexion)
 
-* [Base de donner](#base-de-donner)
+* [BDD](#bdd)
   * [Renseigner le nom de sa base de donner (.env)](#renseigner-le-nom-de-sa-base-de-donner-env)
   * [Installer la migration](#installer-la-migration)
   * [Créer la migration](#cr%C3%A9er-la-migration)
@@ -207,7 +207,7 @@ Voici le code a mettre :
 > Pour voir les routes rechercher la class `Router` et ensuite recherche dans cet class la fonction `auth` 
 ******
 
-# Base de donner 
+# BDD 
 
 ## Renseigner le nom de sa base de donner (.env)
 > faut indiquer où se trouve votre base, son nom, le nom de l'utilisateur, le mot de passe dans le fichier de configuration.env
