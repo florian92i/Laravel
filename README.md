@@ -154,6 +154,7 @@ Laravel s'occupe du reste
 
 `php artisan make:auth`
 
+>exemple avec les commandes make afficher par `php artisan`
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0182.JPG)
 
 > Ensuite il faut inserer dans web.php:
