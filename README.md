@@ -233,8 +233,25 @@ Annule la dernière migration effectuée:
 https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migrations-et-modeles-1#/id/r-3617345 :
 `php artisan make:model Email`
 
-## Créer une requête de formulaire:            
+## Validation Formulaire :  
+
 `php artisan make:request EmailRequest`
+> (unique = pas deux fois le meme nom dans la table)
+> Exemple de validation demander: 
+
+	public function authorize()
+	{
+		return true;
+	}
+	
+	public function rules()
+	{
+		return [
+			'titre' => 'required|max:80',
+			'contenu' => 'required',
+			'tags' => ['Regex:/^[A-Za-z0-9-éèàù]{1,50}?(,[A-Za-z0-9-éèàù]{1,50})*$/']
+		];
+	}
 *******
 
 # Remplir nos tables avec des enregistrements pour faire nos essais
@@ -313,3 +330,4 @@ Exemple:
 
 > Url doc: http://carbon.nesbot.com/docs/
 *******
+
