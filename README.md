@@ -265,7 +265,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
 # Logiciel pour generer les tables
 
 >http://www.laravelsd.com/
-
+>https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/les-commandes-et-les-assistants#/id/r-3618715
 # Remplir nos tables avec des enregistrements pour faire nos essais
 
 ## Dans quel fichier ?
