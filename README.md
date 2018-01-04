@@ -42,8 +42,8 @@
 * [Les Dates](#les-dates)
   * [Crée ces dates avec Carbon](#cr%C3%A9e-ces-dates-avec-carbon)
 
-* [Les Dates](#les-dates)
-  * [Crée ces dates avec Carbon](#cr%C3%A9e-ces-dates-avec-carbon)
+* [Formulaire](#formulaire)
+  * [Personnaliser les messages d'erreur(resources/lang/en/validation.php)](#personnaliser-les-messages-derreurresourceslangenvalidationphp)
 
 ******
 
