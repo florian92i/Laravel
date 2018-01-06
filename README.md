@@ -228,7 +228,13 @@ Voici le code a mettre :
 `php artisan migrate`
 
 
+********
+
+## Supprimer les tables de sa BDD 
+`php artisan migrate:reset`
 *******
+
+
 ## Revenir en arrière avec unrollback 
 Annule la dernière migration effectuée:       
 `php artisan migrate:rollback`
