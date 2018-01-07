@@ -33,6 +33,7 @@
   * [Installer la migration](#installer-la-migration)
   * [Créer la migration](#cr%C3%A9er-la-migration)
   * [Utiliser la migration](#utiliser-la-migration)
+  * [Supprimer les tables de sa BDD](#supprimer-les-tables-de-sa-bdd)
   * [Revenir en arrière avec unrollback](#revenir-en-arri%C3%A8re-avec-unrollback)
   * [Validation Formulaire](#validation-formulaire-)
   
