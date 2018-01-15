@@ -5,9 +5,9 @@
 
 * [Installation](#installation)
   * [Une barre de débogage](#une-barre-de-debogage)
-  * [Pour crée des formulaires simplement](#pour-cr%C3%A9e-des-formulaires-simplement)
+  * [Pour créer des formulaires simplement](#pour-cr%C3%A9er-des-formulaires-simplement)
   
-* [Architecture fichier les dossiers les plus importants](#architecture-fichier)
+* [Architecture fichier : les dossiers les plus importants](#architecture-fichier)
   * [Views (resources\views)](#views-resourcesviews)
   * [Routes(routes\web.php)](#routesrouteswebphp)
   * [Controllers (app\Http\Controllers)](#controllers-apphttpcontrollers)
@@ -15,21 +15,21 @@
   * [Request (app\Http\Requests)](#request-apphttprequests)
 
 * [Cmd artisan](#cmd-artisan)
-  * [Pour voir tout les commandes possibles via l'outil artisan](#pour-voir-tout-les-commandes-possibles-via-loutil-artisan)
-  * [Pour crée un controler](#pour-cr%C3%A9e-un-controler)
-  * [Pour voir tout les chemin du route](#pour-voir-tout-les-chemin-du-route)
+  * [Pour voir toutes les commandes possibles via l'outil artisan](#pour-voir-tout-les-commandes-possibles-via-loutil-artisan)
+  * [Pour créer un controller](#pour-cr%C3%A9er-un-controller)
+  * [Pour voir tous les chemins du root](#pour-voir-tous-les-chemins-du-root)
   
 * [Utile](#utile)
-  * [Pour crée une page 404 au lieu de celle par default](#pour-cr%C3%A9e-une-page-404-au-lieu-de-celle-par-default)
+  * [Pour créer une page 404 au lieu de celle par default](#pour-cr%C3%A9er-une-page-404-au-lieu-de-celle-par-default)
   
 * [Authentification](#authentification)
-  * [Crée une authentification](#cr%C3%A9e-une-authentification)
-  * [Restreindre certaine page si la personne est log ou non](#restreindre-certaine-page-si-la-personne-est-log-ou-non)
-  * [Pour modifier les route une fois l'utilisateur log](#pour-modifier-les-route-une-fois-lutilisateur-log)
-  * [Changer la redirection apres avoir appuyer sur le bouton deconnexion](#changer-la-redirection-apres-avoir-appuyer-sur-le-bouton-deconnexion)
+  * [Créer une authentification](#cr%C3%A9e-une-authentification)
+  * [Restreindre certaines pages si l'internaute est "log" ou non](#restreindre-certaines-pages-si-la-personne-est-log-ou-non)
+  * [Pour modifier les routes une fois l'utilisateur log](#pour-modifier-les-routes-une-fois-lutilisateur-log)
+  * [Changer la redirection apres avoir appuyé sur le bouton deconnexion](#changer-la-redirection-apres-avoir-appuye-sur-le-bouton-deconnexion)
 
 * [BDD](#bdd)
-  * [Renseigner le nom de sa base de donner (.env)](#renseigner-le-nom-de-sa-base-de-donner-env)
+  * [Renseigner le nom de sa base de données (.env)](#renseigner-le-nom-de-sa-base-de-donnees-env)
   * [Installer la migration](#installer-la-migration)
   * [Créer la migration](#cr%C3%A9er-la-migration)
   * [Utiliser la migration](#utiliser-la-migration)
@@ -44,7 +44,7 @@
   * [Dans quel fichier ?](#dans-quel-fichier-)
 
 * [Les Dates](#les-dates)
-  * [Crée ces dates avec Carbon](#cr%C3%A9e-ces-dates-avec-carbon)
+  * [Créer ces dates avec Carbon](#cr%C3%A9er-ces-dates-avec-carbon)
 
 * [Formulaire](#formulaire)
   * [Personnaliser les messages d'erreur(resources/lang/en/validation.php)](#personnaliser-les-messages-derreurresourceslangenvalidationphp)
@@ -54,7 +54,7 @@
 # Installation
 `composer create-project --prefer-dist laravel/laravel nom_projet`
 ******
-### Une barre de debogage
+### Une barre de débogage
 `composer require barryvdh/laravel-debugbar:~2.4 `
 ![alt text](https://cloud.githubusercontent.com/assets/973269/4270452/740c8c8c-3ccb-11e4-8d9a-5a9e64f19351.png)
 
@@ -71,13 +71,13 @@ A rajouter pour activer la barre de debug dans config->app.php en dessous de
 
 ******
 
-### Pour crée des formulaires simplement:
+### Pour créer des formulaires simplement:
 > installer ce paquet via Composer
 https://laravelcollective.com/docs/5.2/html
 
 `composer require "laravelcollective/html":"^5.2.0"`
 
-> Ensuite, ajoutez votre nouveau fournisseur au providers tableau de :config/app.php
+> Ensuite, ajoutez votre nouveau fournisseur aux providers dans le tableau :config/app.php
 
       'providers' => [
          // ...
@@ -85,7 +85,7 @@ https://laravelcollective.com/docs/5.2/html
          // ...
        ],
 ******      
-> Enfin, ajoutez deux alias de classe au aliases tableau de :config/app.php
+> Enfin, ajoutez deux alias de classe aux aliases tableau de :config/app.php
 
        'aliases' => [
          // ...
@@ -109,34 +109,34 @@ https://laravelcollective.com/docs/5.2/html
 
 ### Controllers (app\Http\Controllers)
 
-> C'est le boss, c'est lui qui va appeller toute les fonctions placé dans le repository et lui passé les paramètre pour que le repository marche
+> C'est le boss, c'est lui qui va appeller toute les fonctions placées dans le repository et lui passer les paramètres pour que le repository marche
 ******
 
 ### Repository (app\Repositories)
 
-> Pour le dire simplement, le modèle Repository est un type de conteneur où la logique d'accès aux données est stockée. Il cache les détails de la logique d'accès aux données de la logique métier. En d'autres termes, nous permettons à la logique métier d'accéder à l'objet de données sans connaître l'architecture d'accès aux données sous-jacente.C'est le feu.
+> Pour le dire simplement, le modèle Repository est un type de conteneur où la logique d'accès aux données est stockée. Il cache les détails de la logique d'accès aux données de la logique métier. En d'autres termes, nous permettons à la logique métier d'accéder à l'objet de données sans connaître l'architecture d'accès aux données sous-jacente. C'est tout simplement le feu. 
 ******
 
 ### Request (app\Http\Requests)
-> C'est la ou on fera les controles de saisi, par exemple max 60 caractere ect...
+> C'est là où on fera les controles de saisie, par exemple max 60 caractere etc...
 ******
 
 # Cmd artisan
 
-## Pour voir tout les commandes possibles via l'outil artisan
+## Pour voir toutes les commandes possibles via l'outil artisan
 
 `php artisan`
 
 ![alt text](https://github.com/florian92i/Laravel/blob/master/artisan_cpt.PNG)
 ******
 
-## Pour crée un controler:
+## Pour créer un controller:
 
 `php artisan make:controller NomControler`
 ******
 
 
-## Pour voir tout les chemin du route:
+## Pour voir tous les chemins du root:
 
 `php artisan route:list`
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0154.JPG)
@@ -144,9 +144,9 @@ https://laravelcollective.com/docs/5.2/html
 
 # Utile
 
-## Pour crée une page 404 au lieu de celle par default:
+## Pour créer une page 404 au lieu de celle par default:
 
-Il faut crée la page 404 dans ce dossier
+Il faut créer la page 404 dans ce dossier
 `resources/views/errors/404.blade.php  `
 Laravel s'occupe du reste
 
@@ -154,19 +154,19 @@ Laravel s'occupe du reste
 
 # Authentification
 
-## Crée une authentification:
+## Créer une authentification:
 
 `php artisan make:auth`
 
->exemple avec les commandes make afficher par `php artisan`
+>Exemple avec les commandes make afficher par `php artisan`
 ![alt text](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/img0182.JPG)
 
-> Ensuite il faut inserer dans web.php:
+> Ensuite il faut insérer dans web.php:
 
 `Auth::routes();      //Auth::routes() génère automatiquement toutes les routes de l'authentification`
 ******
 
-## Restreindre certaine page si la personne est log ou non:
+## Restreindre certaines pages si l'utilisateur est log ou non:
 
 `Route::get('profile', ['middleware' => 'auth', 'uses' => 'ProfileController@show']);`
 
@@ -174,10 +174,10 @@ Laravel fournit le `auth` middleware par défaut pour restreindre
 
 https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/l-authentification-1
 https://laravel.com/docs/5.0/authentication#protecting-routes
-//Pour toute questions sur l'aut regarder la doc elle explique tout
+//Pour toutes questions sur l'auth, regarder la doc elle explique tout
 ******
 
-## Pour modifier les route une fois l'utilisateur log:
+## Pour modifier les routes une fois l'utilisateur log:
 
 Vous pouvez personnaliser l'emplacement de redirection post-authentification 
 en définissant une  redirectTopropriété sur le 
@@ -196,7 +196,7 @@ Voici le code a mettre :
     }
 ******
 
-## Changer la redirection apres avoir appuyer sur le bouton deconnexion
+## Changer la redirection apres avoir appuyé sur le bouton "déconnexion"
 > Aller dans le dossier AuthenticatesUsers
  
     public function logout(Request $request)
@@ -208,7 +208,7 @@ Voici le code a mettre :
         return redirect('/');           // Changer le '/' par l'url que vous voulez 
     }
     
-> Pour voir les routes rechercher la class `Router` et ensuite recherche dans cet class la fonction `auth` 
+> Pour voir les routes rechercher la class `Router` et ensuite rechercher dans cette class la fonction `auth` 
 ******
 
 # BDD 
@@ -217,13 +217,13 @@ Voici le code a mettre :
 > faut indiquer où se trouve votre base, son nom, le nom de l'utilisateur, le mot de passe dans le fichier de configuration.env
 ## Installer la migration:   
 `php artisan migrate:install`
-> Cela va nous permettre de suivre toute nos changement de migration par exemple si on a crée une base de donner ect..
+> Cela va nous permettre de suivre toute nos changement de migration par exemple si on a crée une base de données etc..
 
 *******
 ## Créer la migration:     
 `php artisan make:migration create_emails_table`
 
-> Configurer la migration en creant les id ect...  https://laravel.com/docs/5.5/migrations#creating-columns
+> Configurer la migration en créant les id etc...  https://laravel.com/docs/5.5/migrations#creating-columns
 *******
 ## Utiliser la migration:    
 `php artisan migrate`
@@ -248,11 +248,11 @@ Annule la dernière migration effectuée:
 https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migrations-et-modeles-1#/id/r-3617345 :
 `php artisan make:model Email`
 
-## Validation Formulaire :  
+## Validation du formulaire :  
 
 `php artisan make:request EmailRequest`
-> (unique = pas deux fois le meme nom dans la table)
-> Exemple de validation demander: 
+> (unique = pas deux fois le même nom dans la table)
+> Exemple de validation demandée : 
 
 	public function authorize()
 	{
@@ -269,7 +269,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
 	}
 *******
 
-# Logiciel pour generer les tables
+# Logiciel pour générer les tables
 
 >http://www.laravelsd.com/
 
@@ -279,7 +279,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
 ## Dans quel fichier ?
 > DatabaseSeeder.php deja la par default
 ![alt text](https://sdz-upload.s3.amazonaws.com/prod/upload/img88.JPG)
-> A l'interieur de se dossier remplir la function `run()` exemple:
+> A l'intérieur de ce dossier, remplir la function `run()` exemple:
 
 	public function run()
 	{
@@ -287,11 +287,11 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
   	   $this->call(EmailTableSeeder::class);   // Relier au fichier EmailTableSeeder.php
 	}
 	
-> Commande pour crée les deux fichier en question:
+> Commande pour créer les deux fichiers en question:
 
 `php artisan make:seeder UserTableSeeder`
 
-> Exemple de ce qu'il faudrait metre pour la table users:
+> Exemple de ce qu'il faudrait mettre pour la table users:
 
     public function run()
 	{
@@ -315,7 +315,7 @@ https://openclassrooms.com/courses/decouvrez-le-framework-php-laravel-1/migratio
 # Les dates
 *******
 
-## Crée ces dates avec Carbon
+## Créer les dates avec Carbon
 > La classe Carbon, issue d'un package chargé par Laravel, permet la manipulation facile des dates. N'hésitez pas à l'utiliser dès que vous avez des dates à gérer.
 
 > Vous devez ajouter cet ligne dans le fichier dans lequel vous utiliserez des dates `use Carbon\Carbon;`
@@ -354,7 +354,7 @@ Exemple:
 # Formulaire
 *******
 ## Personnaliser les messages d'erreur(resources/lang/en/validation.php)
-> Acceder au fichier `validation.php` ensuite:
+> Accéder au fichier `validation.php` ensuite:
 
 	<?php
 	'custom' => [
@@ -362,7 +362,7 @@ Exemple:
 			'rule-name' => 'custom-message',
   	 			],
 		    ],
-> C'est ici qu'on peut ajouter des messages spécifiques exemple :
+> C'est ici qu'on peut ajouter des messages spécifiques, par exemple :
 	
 	<?php
 	'custom' => [
