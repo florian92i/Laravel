@@ -13,7 +13,7 @@
   * [Controllers (app\Http\Controllers)](#controllers-apphttpcontrollers)
   * [Repository (app\Repositories)](#repository-apprepositories)
   * [Request (app\Http\Requests)](#request-apphttprequests)
-  * [Middleware (app\Http\Middleware)](#middleware)
+  * [Middleware (app\Http\Middleware)](#middleware-apphttpmiddelware)
 
 
 * [Cmd artisan](#cmd-artisan)
