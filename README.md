@@ -13,6 +13,8 @@
   * [Controllers (app\Http\Controllers)](#controllers-apphttpcontrollers)
   * [Repository (app\Repositories)](#repository-apprepositories)
   * [Request (app\Http\Requests)](#request-apphttprequests)
+  * [Middleware (app\Http\Middleware)](#middleware)
+
 
 * [Cmd artisan](#cmd-artisan)
   * [Pour voir toutes les commandes possibles via l'outil artisan](#pour-voir-tout-les-commandes-possibles-via-loutil-artisan)
@@ -121,6 +123,16 @@ https://laravelcollective.com/docs/5.2/html
 > C'est là où on fera les controles de saisie, par exemple max 60 caractere etc...
 ******
 
+### Middleware (app\Http\middelware)
+> Il ne nous reste plus qu'à dire à Laravel de prendre en compte ce middleware dans app/Http/Kernel.php
+
+	<?php
+	protected $middlewareGroups = [
+    		'web' => [
+        \App\Http\Middleware\Locale::class,
+   		 ],    
+	];
+******
 # Cmd artisan
 
 ## Pour voir toutes les commandes possibles via l'outil artisan
